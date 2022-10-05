@@ -10,10 +10,29 @@ body {
     background-color: #d9dcd6;
 }
 
-#header{
+header{
+    display: flex;
+    justify-content: space-between;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 48px;
     width: 100%;
-    background-color: #501B1D; 
-    color: white;
+    background: #501B1D; 
+    color: #ADADAD;
+    align-items: center;
+    
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 24px;
+    padding: 8px;
+    background: #2E1114;
+    color: #83677B;
+    font-size: 34px;
+    text-decoration: underline;
+}
+
