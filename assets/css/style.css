@@ -10,7 +10,6 @@ body {
 }
 
 header{
-    positon: relative;
     display: flex;
     justify-content: space-between;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -142,4 +141,45 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-size:16px;
     position:relative;
     bottom: 40px;
+}
+
+@media screen and (max-width:1616px) {
+    nav ul li {
+        margin-right: 16px;
+        padding: 3px;
+        background: #2E1114;
+        color: #83677B;
+        font-size: 12px;
+        text-decoration: underline;
+        border: 1px solid black;
+    }
+    .content {
+        margin: 12px
+    }
+}
+@media screen and (max-width:1056px) {
+    .small-screen ul li {
+        margin-right: 12px;
+        padding: 2px;
+        background: #2E1114;
+        color: #83677B;
+        font-size: 8px;
+        text-decoration: underline;
+        border: 1px solid black;
+    }
+    .text-block {
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        background-color: #ADADAD;
+        color: black;
+        padding: 3px;
+        margin: 7px;
+        border: 2px solid black;
+        border-radius: 4px;
+        font-size: 12px;
+      }
+      .text-block p {
+        margin: 5px;
+      }
 }
