@@ -1,14 +1,16 @@
+/* creates basic background styling  */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
 }
-
+/* styling for the body */
 body {
     background-color: #d9dcd6;
 }
-
+/* styling for the body, making it a flex box so that the elements inside it can be displayed currectly */
 header{
     display: flex;
     justify-content: space-between;
@@ -24,7 +26,7 @@ nav ul {
     display: flex;
     list-style: none;
 }
-
+/* creates the styling for the internal links */
 nav ul li {
     margin-right: 26px;
     padding: 3px;
@@ -34,6 +36,7 @@ nav ul li {
     text-decoration: underline;
     border: 2px solid black;
 }
+/* orientates the profile picture and sizes it currectly */
 #profile-pic{
     position: absolute;
     top: 120px;
@@ -41,6 +44,7 @@ nav ul li {
     max-height: 160px;
     border: 3px solid black;
 }
+/* styling for the titles of different sections */
 .titles {
     background-color: #ADADAD;
     color: black;
@@ -49,26 +53,30 @@ nav ul li {
     border: 2px solid black;
     border-radius: 4px;
 }
+/* orientates the titles that will be in the bottom right */
 .titles-bottom-right {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     z-index: -1;
 }
-
+/* creates a fun patter to break the header from the body of the website */
 #pattern {
     background-color: #64485C;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     height: 200px;
 }
+/* makes the body a flesx box to help orientate things inside of it */
 #the-body{
     display: flex;
     flex-wrap: wrap;
 }
+/* sizes the basic paragraph words */
  p{
     margin:15px;
     font-family: 'Times New Roman', Times, serif;
  }
+ /* creates the style for the title sections on the left hand side of the page */
 .sections{
     width: 18%;
     background: #b38ba7;
@@ -81,10 +89,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     text-align: right; 
     font-size: 30px;   
 }
-
+/* creates the styling for the contents of each section on the right side of the page */
 .content{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 72%;
     background: #64485C;
     border-radius: 30px;
@@ -92,6 +100,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     float: right;
     flex-direction: column;
 }
+/* creates the format for the grid the pictures of my projects are in */
 .projects {
     height: 780px;
     display: grid;
@@ -100,7 +109,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-    
+    /* tells what picture to go where in the grid */
     .project1 { grid-area: 1 / 1 / 2 / 3;
         padding: 12px; 
         position: relative;}
@@ -116,11 +125,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     .project5 { grid-area: 3 / 2 / 4 / 3; 
         padding: 12px;
         position: relative;}
-
+/* sized the images relative to the grid section they are in */
 .projects img{
     width: 100%;
     height: 100%;
 }
+/* stlyling  for the text box that contain the name and some basic info about said projects */
 .text-block {
     position: absolute;
     bottom: 8px;
@@ -132,17 +142,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border: 2px solid black;
     border-radius: 4px;
   }
+  /*  styling for the footer similar to the header */
 .content nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* sizes the buttons for the footer */
 .content nav ul li{
     font-size:16px;
-    position:relative;
     bottom: 40px;
 }
-
+/*  fixes the size of the buttons so they fit when the screen shrinks */
 @media screen and (max-width:1616px) {
     nav ul li {
         margin-right: 16px;
@@ -157,6 +168,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         margin: 12px
     }
 }
+/* makes thext boxes in the pictures as well as the buttons in the footer fit better as the screen shrinks even more */
 @media screen and (max-width:1056px) {
     .small-screen ul li {
         margin-right: 12px;
@@ -182,4 +194,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       .text-block p {
         margin: 5px;
       }
+}
+/* fixes the profile picture so it remains in the same position relatively as the screen shrinks the final way */
+@media screen and (max-width:689px) {
+    #profile-pic{position: absolute;
+    top: 200px;
+    left: 25px;}
 }
